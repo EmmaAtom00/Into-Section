@@ -1,0 +1,208 @@
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: poppins;
+}
+
+:root {
+    --white: hsl(0, 0%, 98%);
+    --Gray: hsl(0, 0%, 41%);
+    --Black: hsl(0, 0%, 8%);
+}
+
+nav {
+    background-color: var(--white);
+    position: fixed;
+    width: 100vw;
+}
+
+.parent {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    align-items: center;
+}
+
+.leftB, .rightB {
+    display: none;
+}
+
+.leftT {
+    position: fixed;
+    display: none;
+    flex-direction: column;
+    gap: 2em;
+    background-color: var(--white);
+    width: 43.75%;
+    height: 100vh;
+    right: -1;
+    top: 0;
+    padding: 100px 40px;
+    transition: 0.2s;
+}
+
+.arrdown {
+    display: none;
+}
+.closearrow {
+    display: none;
+}
+
+.arrdown1 {
+    display: none;
+}
+
+.close {
+    display: flex;
+    right: 0;
+}
+
+.leftT a:hover {
+    color: var(--Black);
+}
+
+.dropdown:hover {
+    color: var(--Black);
+}
+
+.dropdown {
+    display: flex;
+    align-items: center;
+    gap: 0.25em;
+    color: var(--Gray);
+    cursor: pointer;
+}
+
+.leftT a {
+    text-decoration: none;
+    color: var(--Gray);
+}
+
+.closeMenu {
+    position: absolute;
+    right: 0;
+    top: 5%;
+    padding-right: 30px;
+}
+
+.dropD1, .dropD01, .dropD12, .dropD012 {
+    display: none;
+    margin-top: 10px;
+    gap: 0.5em;
+
+}
+
+.open {
+    display: grid;
+}
+
+.dropDL {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.dropD, .dropD0 {
+    display: flex;
+    align-items: center;
+    gap: 0.3em;
+}
+
+#company {
+    display: grid;
+}
+
+.access {
+    display: grid;
+    gap: 1.5em;
+    justify-content: center;
+    text-align: center;
+}
+
+#regD {
+    border: 2px solid var(--Gray);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+#regD:hover {
+    border: 2px solid var(--Black);
+}
+
+@media screen and (min-width: 768px) {
+    .leftB, .rightB {
+        display: flex;
+        gap: 1em;
+        align-items: center;
+    }
+    .close {
+        display: none;
+    }
+
+    .leftB a, .rightB a {
+        text-decoration: none;
+        color: var(--Gray);
+    }
+    
+    .hamburger {
+        display: none;
+    }
+
+    .leftNav {
+        display: flex;
+        justify-content: space-between;
+        gap: 2.5em;        
+    }
+
+    .dropdown {
+        display: flex;
+        align-items: center;
+        gap: 0.25em;
+        color: var(--Gray);
+    }
+
+    .dropdown:hover {
+        color: var(--Black);
+    }
+
+    .leftB:hover {
+        color: var(--Black);
+    }
+
+    .leftB a:hover, .rightB a:hover {
+        color: var(--Black);
+    }
+
+    .reg {
+        border: 2px solid var(--Gray);
+        border-radius: 20px;
+        padding: 10px 15px;
+    }
+
+    .reg:hover {
+        border: 2px solid var(--Black);
+    }
+
+    #lgSc {
+        position: absolute;
+        background-color: var(--white);
+        padding: 0 30px 20px 0;
+        left: 100px;
+        border-radius: 20px;
+        box-shadow: 0px 10px 10px rgba(131, 128, 128, 0.315);
+    }
+    
+    #lgSc1 {
+        position: absolute;
+        background-color: var(--white);
+        padding: 0 30px 20px 0;
+        top: 50px;
+        border-radius: 20px;
+        box-shadow: 0px 10px 10px rgba(131, 128, 128, 0.315);
+    }
+}

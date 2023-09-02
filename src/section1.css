@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:wght@100;300;400;500;700&display=swap');
+
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Epilogue;
+    font-size: 18px;
+}
+
+:root {
+    --white: hsl(0, 0%, 98%);
+    --Gray: hsl(0, 0%, 41%);
+    --Black: hsl(0, 0%, 8%);
+}
+
+.main {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 80px;
+}
+
+.heroImg {
+    width: 100%;
+    height: auto;
+}
+
+.heroImgD {
+    display: none;
+}
+
+.heroTxt {
+    text-align: center;
+    font-size: 2em;
+    padding: 30px 0;
+}
+
+.heroP {
+    text-align: center;
+    color: var(--Gray);
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.learn {
+    color: var(--white);
+    margin: 30px auto;
+    padding: 15px 25px;
+    background-color: var(--Black);
+    border-radius: 20px;
+    border: 0;
+    display: flex;
+}
+
+.footerLogo {
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+    justify-content: center;
+    margin: 3.5em auto;
+}
+
+.footerLogo {
+    width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (min-width: 768px)
+{
+    .heroImg {
+        display: none;
+    }
+
+    .heroImgD {
+        display: unset;
+        width: 50%;
+        height: auto;
+    }
+    .main2 {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        gap: 2em;
+        align-items: center;
+    }
+
+    .heroTxt, .heroP {
+        text-align: left;
+    }
+
+    .heroTxt {
+        font-size: 30px;
+    }
+
+    .heroP {
+        font-size: 15px;
+        margin-bottom: 30px;
+    }
+
+    .learn {
+        margin: unset;
+    }
+    .leftsec {
+        width: 60%;
+    }
+
+    .footerLogo {
+        justify-content: left;
+        width: 50%;
+        margin-bottom: unset;
+        margin-left: unset;
+        margin-top: 60px;
+        gap: 1em;
+        position: relative;
+        bottom: 0;
+    }
+
+    .footerImg {
+        width: 40%;
+        height: auto;
+    }
+}
+
+
+@media only screen and (min-width: 1300px) {
+    .heroImg {
+        display: none;
+    }
+
+    .heroImgD {
+        display: unset;
+        width: 40%;
+        height: auto;
+    }
+
+    .main2 {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+        align-items: center;
+    }
+
+    .heroTxt, .heroP {
+        text-align: left;
+    }
+
+    .heroTxt {
+        font-size: 80px;
+    }
+
+    .learn {
+        margin: unset;
+    }
+    
+    .leftsec {
+        width: 60%;
+    }
+
+    .footerLogo {
+        justify-content: left;
+        width: 50%;
+        margin-bottom: unset;
+        margin-left: unset;
+        gap: 1em;
+        position: relative;
+        bottom: 0;
+    }
+
+    .footerImg {
+        width: 50%;
+        height: auto;
+    }
+
+}
+
