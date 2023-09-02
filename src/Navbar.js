@@ -70,6 +70,9 @@ export default function Navbar() {
           </div>
         </div>
 
+
+
+
         <div className='righttNav'>
           <img src = {Menu} alt='Logo' className='hamburger' onClick={ToggleMenu}/>
           <div className='leftT'>
@@ -150,6 +153,7 @@ export default function Navbar() {
     </nav>
   )
 };
+
 
 
 function ToggleMenu() {
